@@ -1,15 +1,14 @@
 {
-  "name": "jcw2d",
-  "description": "webgl 2d 2.5d jc canvas",
-  "main": "src/jcw2d.js",
+  "name": "jcw3d",
+  "description": "webgl 3d jc canvas",
+  "main": "src/jcw3d.js",
   "authors": [
     "jasonChen"
   ],
   "license": "ISC",
   "keywords": [
     "webgl",
-    "2d",
-    "2.5d",
+    "3d",
     "jc",
     "canvas"
   ],

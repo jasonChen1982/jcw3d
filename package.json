@@ -1,19 +1,18 @@
 {
-  "name": "jcw2d",
+  "name": "jcw3d",
   "version": "0.0.1",
-  "description": "webgl 2d 2.5d jc canvas",
-  "main": "src/jcw2d.js",
+  "description": "webgl 3d mesh jc canvas",
+  "main": "src/jcw3d.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.ucweb.local:redfe/jcw2d.git"
+    "url": "git@git.ucweb.local:redfe/jcw3d.git"
   },
   "keywords": [
     "webgl",
-    "2d",
-    "2.5d",
+    "3d",
     "jc",
     "canvas"
   ],
