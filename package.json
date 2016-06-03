@@ -4,6 +4,9 @@
   "description": "webgl 3d mesh jc canvas",
   "main": "src/jcw3d.js",
   "scripts": {
+    "patch": "bower version patch & npm version patch",
+    "minor": "bower version minor & npm version minor",
+    "major": "bower version major & npm version major",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
