@@ -1,5 +1,6 @@
 {
   "name": "jcw3d",
+  "version": "0.0.1",
   "description": "webgl 3d jc canvas",
   "main": "src/jcw3d.js",
   "authors": [
