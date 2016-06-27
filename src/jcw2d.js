@@ -3,11 +3,7 @@
 
     //=include modules/RAF.js
 
-    //=include modules/tween.js
-
-    //=include modules/loader.js
-
-    //=include modules/jcc2d.js
+    //=include modules/jcw3d.js
 
     if (typeof exports !== 'undefined') {
         if (typeof module !== 'undefined' && module.exports) {
