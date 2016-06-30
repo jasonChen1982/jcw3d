@@ -3479,20 +3479,6 @@ JC.PerspectiveCamera.prototype.updateProjectionMatrix = function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 JC.Renderer = function(dom, parameters) {
     this.domElement = typeof dom === 'string' ? document.getElementById(dom) : dom;
     var This = this,
@@ -3505,6 +3491,7 @@ JC.Renderer = function(dom, parameters) {
 
 
     this.gl = initGL();
+    this.projScreenMatrix = new JC.Matrix4();
     this.shaderManager = new JC.ShaderManager(this.gl);
     this.autoUpdateScene = true;
 
@@ -3555,11 +3542,9 @@ JC.Renderer.prototype.render = function(scene, camera) {
 
     camera.matrixWorldInverse.getInverse(camera.matrixWorld);
 
-    // _projScreenMatrix.multiplyMatrices( camera.projectionMatrix, camera.matrixWorldInverse );
-    // _frustum.setFromMatrix( _projScreenMatrix );
+    this.projScreenMatrix.multiplyMatrices( camera.projectionMatrix, camera.matrixWorldInverse );
 
-    // _projScreenMatrix.multiply( camera.projectionMatrix, camera.matrixWorldInverse );
-    // _frustum.setFromMatrix( _projScreenMatrix );
+    // this.frustum.setFromMatrix( this.projScreenMatrix );
 
     var session = {
         camera: camera,
